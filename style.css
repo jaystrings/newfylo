@@ -1,0 +1,64 @@
+:root {
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGray: hsl(0, 0%, 75%);
+}
+
+
+.inp {
+  width: 100%;
+  height: 3rem;
+}
+
+.btn {
+  width: 100%;
+  height: 3rem;
+}
+
+.background1 {
+    background-color: var(--LightGrayishBlue);
+}
+
+::placeholder {
+  padding-left: 1rem;
+}
+
+.line {
+  border: solid 0.5px var(--ModerateCyan);
+  width: 40%;
+  margin-top: 0.8rem;
+
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .inp {
+    width: 70%;
+  }
+  .btn {
+    width: 30%;
+  }
+  .imgA {
+   width: 50%; 
+  }
+
+  .imgB {
+    width: 50%;
+  }
+
+  .center {
+    align-items: flex-start;
+  }
+
+  .line {
+    width: 30%;
+  }
+}
